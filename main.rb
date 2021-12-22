@@ -4,7 +4,7 @@ require 'optparse'
 
 options = {}
 OptionParser.new do |opt|
-  opt.banner = "\nProvides random words from a list of words. For example, it can be used to generate passwords.\n\nUsage .\main.rb [options]"
+  opt.banner = "\nProvides random words from a list of words. For example, it can be used to generate passwords.\n\nUsage .\\main.rb [options]"
   opt.on('-f', '--word_file FILENAME', 'Set the word file to one of those that is included with this software') { |o| options[:word_file_name] = o }
   opt.on('-F', '--custom_word_file FILENAME', 'Sets the word file to a custom one on the user\'s system. Requires the full path'){ |o| options[:custom_word_file] = o}
   opt.on('-l', '--list_word_files', 'Lists the word files that are included with this software') { |o| options[:list_files] = true }
