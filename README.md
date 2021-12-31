@@ -5,8 +5,11 @@ Provides random words from a list of words. For example, it can be used to gener
 Usage `.\main.rb [options]`
 *    `-f`, `--word_file FILENAME`         Set the word file to one of those that is included with this software
 *    `-F`, `--custom_word_file FILENAME`  Sets the word file to a custom one on the user's system. Requires the full path
+*    `-j`, `--join STRING`                Sets the string that joins the words
 *    `-l`, `--list_word_files`            Lists the word files that are included with this software
 *    `-n`, `--number NUMBER`              Sets how many random words to generate
+*    `-N`, `--new_lines NUMBER`           Sets how many new lines to print in-between words
+*    `-c`, `--case CASE`                  Sets the case of each word. original|upper|lower|capitalise
 
 The directory "word_lists" includes word list files. But we can use any file of words with one word per line.
 Using command line arguments, the user can select what word file [s]he would like to use, and the amount of random words to select.
